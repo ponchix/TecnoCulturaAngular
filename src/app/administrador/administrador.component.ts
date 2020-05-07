@@ -24,7 +24,7 @@ export class AdministradorComponent implements OnInit, AfterViewInit {
   @Input() post:RevistaI;
   private revistas:RevistaI[];
   displayedColumns: String[] = ['numero', 'actions',];
-  show:boolean=false;
+  show:boolean=true;
   tabla:boolean=false;
   vista:boolean=false;
   inicio:boolean=true;

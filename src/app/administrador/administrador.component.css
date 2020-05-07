@@ -1,10 +1,24 @@
 
 /*css menu*/
+.btn-dark{
+    margin-top: 4rem;
+    background: black;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.btn-group-vertical{
+   margin-left: 0px;
+  }
 .list-group-item{
-  margin-top: 4rem;
-    padding-top: 2rem;
-    margin-left: 2px;
+margin-bottom: 1rem;
+ margin-left: 2px;
+ padding-bottom: 1rem;
+ padding-top: 1rem;
     margin-right: 2px;
+    border: 15px;
 font-size: 5px;
 background: black;
 text-transform: uppercase;
@@ -25,10 +39,7 @@ align-content: center;
     margin-left: auto !important;
     margin-right: auto !important;
 }
-.list-group-horizontal{
-    margin-left: auto !important;
-    margin-right: auto !important;
-}
+
 .list-group::after{
     background: black;
     color: rgb(160, 2, 2);
@@ -40,10 +51,7 @@ align-content: center;
     font-size: 15px !important;
 
 }
-.menu{
-    margin-top: 2rem;
 
-}
 
 /*Fin css menu*/
 /*card administracion*/
@@ -51,18 +59,28 @@ align-content: center;
   width: 100%;
     text-align: center;
     margin-top: 2rem;
+    background: initial;
+    color: white;
+    border: none !important;
 }
 /*CSS TABLA REVISTA*/
 table {
     width: 100%;
     align-self:center;
+    text-align: center;
+    width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  background: initial;
+  border:none;
+  outline: none;
 
   }
   .mat-table{
 background:rgba(255, 255, 254, 0.877);
 }
 .mat-paginator{
-    background:rgba(255, 255, 255, 0.877); ;
+    background:rgba(255, 255, 255, 0.418);
     color: rgb(0, 0, 0);
     width: 100%;
 }
@@ -77,11 +95,22 @@ background:rgba(255, 255, 254, 0.877);
     width: 100%;
     margin: 0 auto;
     display: block;
-    margin-top: 1rem;
-    background:rgba(255, 255, 254, 0.877);
-    color: rgb(0, 0, 0);
+    background:rgba(255, 255, 255, 0.418);
+      border: solid 2px rgb(255, 255, 255);
       
 }
+
+
+td:hover{
+    background-color: rgb(73, 71, 71);
+    font-size: 15px;
+    color: white;
+    }
+  th{
+      background: rgb(0, 0, 0);
+      color: white;
+  }
+
 td.mat-cell:first-of-type, td.mat-footer-cell:first-of-type, th.mat-header-cell:first-of-type {
     padding-left: 15px;
     padding-right: 0px;
@@ -129,9 +158,10 @@ button:hover{
  button{
      padding: 2px 2px 2px 2px;
      
-     margin-left:40px;
-     margin-right: 10px;
+     margin-left:50px;
+     margin-right: 20px;
  }
+
  .btn-danger{
     background: rgb(255, 0, 0);
  }
@@ -139,7 +169,10 @@ button:hover{
 
   .col-lg{
       padding: 0px !important;
-      margin-top: 0px;
+    
+  }
+  .col{
+      margin-top: 5rem;
   }
  
  

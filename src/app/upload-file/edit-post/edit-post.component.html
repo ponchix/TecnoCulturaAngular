@@ -48,15 +48,15 @@
   </div>
 </div>
  --->
-
+<!---TABLA PORTADA-->
 <div class="inicio">
  <div class="container">
-   <div class="card"> 
-     <h1>PAGINA INICIO Actual</h1>
+   <div class="cardT"> 
+     <h1>Portada actual</h1>
         </div>
   <div class="row">
-    <div class="col">
-  
+    <div class="col-lg">
+  <div class="table-responsive-md">
       <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
       
         <!-- Position Column -->
@@ -88,21 +88,21 @@
                      </td>
         </ng-container>
         <!----Acciones-->
-        
-        
-      
         <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
         <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
       
       </table>
+    </div>
       </div>
   </div>
+
+  <!---FORMULARIO PORTADA-->
    <div class="row">
     <div class="col-md-6">
   <div class="card mt-5" >
     <div class="card-body">
        <form #RevistaForm="ngForm" (ngSubmit)="addNewPortada(RevistaForm.value)">
-                <h1 class="titulo">Formulario Pagina de Inicio</h1>
+                <h1 class="titulo">Formulario Portada</h1>
             <div class="etiqueta">
               <label>Numero de Revista: </label>
             </div>
@@ -158,9 +158,9 @@
   </div>
   </div>
 
-  <!----->
+  <!--VISTA PREVIA--->
   <div class="col-md-4">
-    <div class="card" >
+    <div class="cardT" >
       <div class="card-body">
         <h4 class="card-title">vista previa</h4>
     <div  *ngIf="portadas$ | async as portadas">

@@ -1,6 +1,6 @@
 .container{
   width: 100%;
-}
+  }
 .card{
  margin-top:1rem;
  text-align: center;
@@ -8,7 +8,15 @@
  width: 100%;
  background: initial;
  color: white;
- border: none;
+ border: solid 1px;
+}
+.cardT{
+  margin-top:1rem;
+  text-align: center;
+  outline: none;
+  width: 100%;
+  background: initial;
+  color: white;
 }
 .formI{
   background: white;
@@ -27,18 +35,30 @@
   padding-top:0px ;
 }
 .col-md-4{
- margin-top: 1rem;
   display: initial;
   margin-left: auto;
   margin-right: auto;
   
 }
+.col-lg{
+      padding: 0px !important;
+    margin-top: 0px;
+}
+
 .mt-5, .my-5 {
   margin-top: 1rem!important;
 }
 table{
   margin-top:0rem;
-}
+  align-self: center;
+  text-align: center;
+  width: 100%;
+margin-right: auto;
+margin-left: auto;
+background: initial;
+color: white !important;
+  }
+
 .bg-danger{
   background: red;
   text-align: center;
@@ -47,7 +67,7 @@ table{
 
 }
 input{
-  width: 50%;
+  width: 85%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -67,20 +87,40 @@ button{
   margin-right: auto;
 }
 .btn-danger{
-  margin-right: 90px;
+  margin-right:auto;
+  margin-left:auto;
   text-align: center;
 }
-
+td:hover{
+  background-color: rgb(73, 71, 71);
+  font-size: 15px;
+}
 td.mat-cell:first-of-type, td.mat-footer-cell:first-of-type, th.mat-header-cell:first-of-type {
   padding-left: 15px;
   padding-right: 0px;
   text-align: center;
 width: 5%;
+color: white !important;
 }
-
+td.mat-cell, td.mat-footer-cell, th.mat-header-cell {
+  padding: 0;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  color: white;
+  border: solid 1px;
+}
+th.mat-header-cell {
+  text-align: center;
+  text-transform: uppercase;
+  border: solid 1px;
+}
+th{
+  background-color: rgb(0, 0, 0);
+}
 td.mat-cell:last-of-type, td.mat-footer-cell:last-of-type, th.mat-header-cell:last-of-type {
   padding-right: 4px;
 text-align: center;
+color: white !important;
 }
 td.mat-cell, td.mat-footer-cell{
   padding-left:10px;
@@ -88,4 +128,5 @@ td.mat-cell, td.mat-footer-cell{
   border-bottom-width: 1px;
   border-bottom-style: solid;
   text-align: center !important;
+  color: white !important;
 }
