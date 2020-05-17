@@ -13,11 +13,12 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 })
 export class InicioComponent implements OnInit {
   public portadas$:Observable<Inicio[]>;
+  public inicios$:Observable<RevistaI[]>;
 
   constructor(private postSvc: RevistaServiceService) { }
 
   ngOnInit() {
-     this.portadas$=this.postSvc.getAllPortadas();
+     this.inicios$=this.postSvc.getInicio();
   }
  
 

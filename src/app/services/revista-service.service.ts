@@ -65,6 +65,20 @@ export class RevistaServiceService {
       )
     );
   }
+  public getInicio(): Observable<RevistaI[]> {
+    return this.afs
+    .collection('Revistas',ref => ref.orderBy('numeroR','desc').limit(1))
+      .snapshotChanges()
+      .pipe(
+        map(actions =>
+          actions.map(a => {
+            const data = a.payload.doc.data() as RevistaI;
+            const id = a.payload.doc.id;
+            return { id, ...data };
+          })
+        )
+      );
+  }
  
 
   public getOnePost(id: RevistaI): Observable<RevistaI> {

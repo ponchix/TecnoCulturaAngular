@@ -21,9 +21,9 @@ import Swal from 'sweetalert2';
   styleUrls: ['./edit-post.component.css']
 })
 export class EditPostComponent implements OnInit, AfterViewInit {
-  @Input() post:Inicio;
-  private portadas:Inicio[];
-  displayedColumns: String[] = ['numero','portada','pdf','actions'];
+  @Input() post:RevistaI;
+  private portadas:RevistaI[];
+  displayedColumns: String[] = ['numero','portada','pdf'];
 
   dataSource = new MatTableDataSource();
 
