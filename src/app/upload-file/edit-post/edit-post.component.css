@@ -142,3 +142,15 @@ td.mat-cell, td.mat-footer-cell{
   text-align: center !important;
   color: white !important;
 }
+/*Portada*/
+li{
+  text-align:left;
+  border: solid 1px;
+  border-color: white;
+  background:rgba(122, 119, 119, 0.418);
+  color:white;
+  font-weight: bold;
+}
+li:hover{
+  background: rgb(59, 57, 57);
+}

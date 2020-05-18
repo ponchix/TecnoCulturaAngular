@@ -1,5 +1,3 @@
-export class Articulos {
-}
 export class Articulo {
 
     $key: String;

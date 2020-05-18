@@ -54,26 +54,39 @@
    <div class="cardTA"> 
      <h1>Portada actual</h1>
         </div>
-   
-      <div class="cardT" >
+         <div class="cardT" >
         <div class="card-body">
           <h4 class="card-title">vista previa</h4>
       <div  *ngIf="inicios$ | async as portadas">
-      
-        <div  *ngFor="let portada of portadas">
+              <div  *ngFor="let portada of portadas">
+                <div class="row">
+                <div class="col-md-8">
+                  <ul>
+                      <li>ID:
+                         {{portada.id}}</li>
+                      <li>Numero de revista:
+                         {{portada.numeroR}}</li>
+                     <li>Referencia de portada:
+                         {{portada.fileRef}}</li>
+                     <li>Url portada:
+                         {{portada.imagenR}}</li>   
+                     <li>Referencia de revista:
+                         {{portada.fileRefPDF}}</li>   
+                     <li>Url revista:
+                         {{portada.pdf}}</li>   
+                </ul>
+                 
+                </div>
+             <div class="col-md-4">
           <div>  <a href="{{portada.pdf}}" target="_blank">
             <img src="{{portada.imagenR}}" alt="TecnoCultura 49" width="350" class="img-fluid book-mockup"> 
             <img src="https://firebasestorage.googleapis.com/v0/b/tecnocultura-df5ce.appspot.com/o/logolatinIndex.jpg?alt=media&token=e4342a54-001d-4adf-9f87-ad6329620197" width="100" height="28" alt=""/></a> </div>
           </div>
-          <ul>
-            <li>
-              {{portada.pdf}}
-            </li>
-          </ul>
       </div>
     </div>
     </div>
-  
+  </div>
+</div>
  <!----
     <div class="col-lg">
   <div class="table-responsive-md">
