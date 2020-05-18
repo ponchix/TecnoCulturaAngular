@@ -23,6 +23,7 @@ import Swal from 'sweetalert2';
 export class EditPostComponent implements OnInit, AfterViewInit {
   @Input() post:RevistaI;
   private portadas:RevistaI[];
+  public inicios$:Observable<RevistaI[]>;
   displayedColumns: String[] = ['numero','portada','pdf'];
 
   dataSource = new MatTableDataSource();
@@ -42,6 +43,8 @@ export class EditPostComponent implements OnInit, AfterViewInit {
       .getAllPortadas()
       .subscribe(portadas => (this.dataSource.data = portadas));
       this.portadas$=this.postSvc.getAllPortadas();
+
+      this.inicios$=this.postSvc.getInicio();
   }
   ngAfterViewInit() {
     this.dataSource.paginator = this.paginator;

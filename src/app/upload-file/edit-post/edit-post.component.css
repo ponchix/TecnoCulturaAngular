@@ -1,5 +1,7 @@
 .container{
   width: 100%;
+  align-self:flex-start;
+  
   }
 .card{
  margin-top:1rem;
@@ -12,20 +14,30 @@
 }
 .cardT{
   margin-top:1rem;
+  text-align: left;
+  outline: none;
+  width: 100%;
+  background: initial;
+  color: white;
+}
+.cardTA{
+  margin-top:1rem;
   text-align: center;
   outline: none;
   width: 100%;
   background: initial;
   color: white;
 }
+.fo
 .formI{
   background: white;
 }
 .card-title{
   text-transform: uppercase;
+  text-align:center;
 }
 .inicio{
-  align-self: flex-end;
+  align-self:flex-start;
   margin-top: 1rem;
 }
 .col-md-6{
